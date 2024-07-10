@@ -202,11 +202,15 @@ namespace linearalgebra {
         }
     }
 }
+// activations represent neurons of previous layer and delta represents the error
+//calculate the new weights thorugh activations and learning_rate,delta
+
     void update_bias(const vector<double>& delta, vector<double>& bias, double learning_rate){
         for (size_t i = 0;  i < bias.size(); ++i) {
             bias[i] -= learning_rate * delta[i];
             }
         }
-   
+// size() returns a value of type size_t, which is an unsigned type representing the size of objects.
+// bias of i th neuron is updated by the formula , computed the adjustment and subtracts from the current value
 }
 
